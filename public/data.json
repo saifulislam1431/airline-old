@@ -1,0 +1,378 @@
+ [
+    {
+        "image": "https://images.unsplash.com/photo-1579373849326-d484661bcbc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=327&q=80",
+        "flight_name": "Emirates",
+        "capacity": 200,
+        "price": {
+            "business_class": 1500,
+            "economic_class": 500
+        },
+        "description": "Emirates is a luxurious and comfortable option for your travel needs.",
+        "rating": 4.5,
+        "from": "New York",
+        "to": "London",
+        "departure_time": "2023-06-01 09:00",
+        "arrival_time": "2023-06-01 14:30"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1513540213998-8166856c3f45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "flight_name": "Qatar Airways",
+        "capacity": 180,
+        "price": {
+            "business_class": 1200,
+            "economic_class": 350
+        },
+        "description": "Qatar Airways offers affordable and convenient travel options.",
+        "rating": 3.8,
+        "from": "Paris",
+        "to": "Dubai",
+        "departure_time": "2023-06-02 16:30",
+        "arrival_time": "2023-06-02 23:45"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1531759951075-dffa55b8e086?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80",
+        "flight_name": "Singapore Airlines",
+        "capacity": 220,
+        "price": {
+            "business_class": 1800,
+            "economic_class": 600
+        },
+        "description": "Singapore Airlines ensures a comfortable and enjoyable journey.",
+        "rating": 4.2,
+        "from": "Sydney",
+        "to": "Tokyo",
+        "departure_time": "2023-06-03 11:15",
+        "arrival_time": "2023-06-04 07:45"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1559711533-19d5cfd1b4cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80",
+        "flight_name": "Air France",
+        "capacity": 190,
+        "price": {
+            "business_class": 1400,
+            "economic_class": 400
+        },
+        "description": "Air France offers a seamless travel experience with excellent service.",
+        "rating": 4.3,
+        "from": "Los Angeles",
+        "to": "New Delhi",
+        "departure_time": "2023-06-05 13:00",
+        "arrival_time": "2023-06-06 07:30"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1564947826775-636a9983b382?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "flight_name": "British Airways",
+        "capacity": 210,
+        "price": {
+            "business_class": 2000,
+            "economic_class": 550
+        },
+        "description": "British Airways provides a luxurious and comfortable journey for its passengers.",
+        "rating": 4.8,
+        "from": "London",
+        "to": "Sydney",
+        "departure_time": "2023-06-07 10:30",
+        "arrival_time": "2023-06-08 06:15"
+    },
+{
+        "image": "https://images.unsplash.com/photo-1583202075378-66202b71e755?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "flight_name": "Delta Air Lines",
+        "capacity": 240,
+        "price": {
+            "business_class": 1700,
+            "economic_class": 450
+        },
+        "description": "Delta Air Lines provides reliable and comfortable travel options.",
+        "rating": 4.4,
+        "from": "Chicago",
+        "to": "Miami",
+        "departure_time": "2023-06-10 08:45",
+        "arrival_time": "2023-06-10 12:15"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1631805410770-8e7fcdc0d14e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+        "flight_name": "Cathay Pacific",
+        "capacity": 210,
+        "price": {
+            "business_class": 1900,
+            "economic_class": 550
+        },
+        "description": "Cathay Pacific offers premium service and a luxurious travel experience.",
+        "rating": 4.7,
+        "from": "Hong Kong",
+        "to": "San Francisco",
+        "departure_time": "2023-06-12 17:30",
+        "arrival_time": "2023-06-12 21:45"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1571839091191-1152d29422ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+        "flight_name": "Lufthansa",
+        "capacity": 180,
+        "price": {
+            "business_class": 1400,
+            "economic_class": 400
+        },
+        "description": "Lufthansa offers exceptional service and comfort for your travels.",
+        "rating": 4.6,
+        "from": "Frankfurt",
+        "to": "Singapore",
+        "departure_time": "2023-06-15 10:00",
+        "arrival_time": "2023-06-16 04:30"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1668277320254-5b3df501a783?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "flight_name": "JetBlue Airways",
+        "capacity": 160,
+        "price": {
+            "business_class": 1200,
+            "economic_class": 300
+        },
+        "description": "JetBlue Airways offers affordable and convenient travel options with excellent service.",
+        "rating": 4.1,
+        "from": "New York",
+        "to": "Los Angeles",
+        "departure_time": "2023-06-18 13:15",
+        "arrival_time": "2023-06-18 17:45"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1644553787421-859989e4fde1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+        "flight_name": "Qantas",
+        "capacity": 200,
+        "price": {
+            "business_class": 1800,
+            "economic_class": 500
+        },
+        "description": "Qantas ensures a comfortable and enjoyable journey with its excellent service.",
+        "rating": 4.4,
+        "from": "Melbourne",
+        "to": "Singapore",
+        "departure_time": "2023-06-20 09:30",
+        "arrival_time": "2023-06-20 14:45"
+    },
+{
+        "image": "https://images.unsplash.com/photo-1594433574870-f15931453e52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80",
+        "flight_name": "United Airlines",
+        "capacity": 220,
+        "price": {
+            "business_class": 1600,
+            "economic_class": 450
+        },
+        "description": "United Airlines offers reliable service and comfortable travel options.",
+        "rating": 4.2,
+        "from": "Los Angeles",
+        "to": "New York",
+        "departure_time": "2023-06-22 12:00",
+        "arrival_time": "2023-06-22 18:30"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1566827346655-6ad4e69dd3f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=940&q=80",
+        "flight_name": "Air Canada",
+        "capacity": 190,
+        "price": {
+            "business_class": 1400,
+            "economic_class": 400
+        },
+        "description": "Air Canada provides a seamless travel experience with excellent service.",
+        "rating": 4.3,
+        "from": "Toronto",
+        "to": "Vancouver",
+        "departure_time": "2023-06-24 15:30",
+        "arrival_time": "2023-06-24 18:15"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1631807719683-25f08bb2e296?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+        "flight_name": "Etihad Airways",
+        "capacity": 180,
+        "price": {
+            "business_class": 1700,
+            "economic_class": 500
+        },
+        "description": "Etihad Airways offers luxurious and comfortable travel options for discerning passengers.",
+        "rating": 4.6,
+        "from": "Abu Dhabi",
+        "to": "London",
+        "departure_time": "2023-06-27 09:15",
+        "arrival_time": "2023-06-27 14:45"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1519316053083-ac1f19db4fa5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "flight_name": "ANA - All Nippon Airways",
+        "capacity": 210,
+        "price": {
+            "business_class": 1900,
+            "economic_class": 550
+        },
+        "description": "ANA offers exceptional service and a delightful travel experience.",
+        "rating": 4.7,
+        "from": "Tokyo",
+        "to": "Honolulu",
+        "departure_time": "2023-06-30 11:30",
+        "arrival_time": "2023-06-30 16:45"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1596103114642-50aecc7b4774?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+        "flight_name": "Turkish Airlines",
+        "capacity": 200,
+        "price": {
+            "business_class": 1800,
+            "economic_class": 500
+        },
+        "description": "Turkish Airlines offers a comfortable and enjoyable journey with its excellent service.",
+        "rating": 4.4,
+        "from": "Istanbul",
+        "to": "New York",
+        "departure_time": "2023-07-03 08:00",
+        "arrival_time": "2023-07-03 14:30"
+    },
+{
+        "image": "https://images.unsplash.com/photo-1563724576495-4bb026cc9133?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+        "flight_name": "American Airlines",
+        "capacity": 220,
+        "price": {
+            "business_class": 1500,
+            "economic_class": 400
+        },
+        "description": "American Airlines offers a reliable and comfortable travel experience.",
+        "rating": 4.1,
+        "from": "Dallas",
+        "to": "Chicago",
+        "departure_time": "2023-07-05 13:30",
+        "arrival_time": "2023-07-05 16:15"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1610632685400-af19a052cac8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80",
+        "flight_name": "Southwest Airlines",
+        "capacity": 180,
+        "price": {
+            "business_class": 1200,
+            "economic_class": 300
+        },
+        "description": "Southwest Airlines provides affordable and convenient travel options.",
+        "rating": 3.9,
+        "from": "Denver",
+        "to": "Las Vegas",
+        "departure_time": "2023-07-07 09:00",
+        "arrival_time": "2023-07-07 10:30"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1634197219719-b91e90c8d7a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80",
+        "flight_name": "AirAsia",
+        "capacity": 200,
+        "price": {
+            "business_class": 1300,
+            "economic_class": 250
+        },
+        "description": "AirAsia offers budget-friendly travel options without compromising quality.",
+        "rating": 4.0,
+        "from": "Kuala Lumpur",
+        "to": "Bangkok",
+        "departure_time": "2023-07-10 15:45",
+        "arrival_time": "2023-07-10 17:30"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1621529024474-4de153e929ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "flight_name": "Alaska Airlines",
+        "capacity": 190,
+        "price": {
+            "business_class": 1600,
+            "economic_class": 400
+        },
+        "description": "Alaska Airlines ensures a comfortable and enjoyable journey with excellent service.",
+        "rating": 4.2,
+        "from": "Seattle",
+        "to": "San Francisco",
+        "departure_time": "2023-07-12 11:30",
+        "arrival_time": "2023-07-12 13:15"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1654962086298-d86728313a65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+        "flight_name": "Virgin Atlantic",
+        "capacity": 210,
+        "price": {
+            "business_class": 1800,
+            "economic_class": 500
+        },
+        "description": "Virgin Atlantic offers a luxurious and comfortable travel experience for its passengers.",
+        "rating": 4.5,
+        "from": "London",
+        "to": "New York",
+        "departure_time": "2023-07-15 08:45",
+        "arrival_time": "2023-07-15 14:15"
+    },
+{
+        "image": "https://media.istockphoto.com/id/1022190824/photo/klm.jpg?s=1024x1024&w=is&k=20&c=zaw0Sgvr-OVRXn_ViwE9q_SxTXmzOFhh3rcF1R2_teU=",
+        "flight_name": "KLM Royal Dutch Airlines",
+        "capacity": 220,
+        "price": {
+            "business_class": 1700,
+            "economic_class": 450
+        },
+        "description": "KLM Royal Dutch Airlines offers comfortable and reliable travel options.",
+        "rating": 4.3,
+        "from": "Amsterdam",
+        "to": "New York",
+        "departure_time": "2023-07-18 14:00",
+        "arrival_time": "2023-07-18 19:30"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1601041315560-75cc650a9826?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "flight_name": "Air New Zealand",
+        "capacity": 200,
+        "price": {
+            "business_class": 1800,
+            "economic_class": 500
+        },
+        "description": "Air New Zealand provides a comfortable and enjoyable travel experience.",
+        "rating": 4.4,
+        "from": "Auckland",
+        "to": "Los Angeles",
+        "departure_time": "2023-07-20 09:30",
+        "arrival_time": "2023-07-20 14:45"
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1512329301597-18dd60e894bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "flight_name": "Finnair",
+        "capacity": 180,
+        "price": {
+            "business_class": 1500,
+            "economic_class": 400
+        },
+        "description": "Finnair offers quality service and a comfortable journey for travelers.",
+        "rating": 4.2,
+        "from": "Helsinki",
+        "to": "Tokyo",
+        "departure_time": "2023-07-23 11:15",
+        "arrival_time": "2023-07-24 07:45"
+    },
+    {
+        "image": "https://media.istockphoto.com/id/1090074452/photo/hong-kong-china-november-25-2018-jet-airways-plane-in-hong-kong-international-airport.jpg?s=1024x1024&w=is&k=20&c=nHXun3Wx4INcha9YOrYzenflPpRKVQIBiJ1x2yIjPMo=",
+        "flight_name": "Jet Airways",
+        "capacity": 190,
+        "price": {
+            "business_class": 1600,
+            "economic_class": 350
+        },
+        "description": "Jet Airways offers convenient and comfortable travel options.",
+        "rating": 4.0,
+        "from": "Mumbai",
+        "to": "Dubai",
+        "departure_time": "2023-07-26 13:00",
+        "arrival_time": "2023-07-26 16:30"
+    },
+    {
+        "image": "https://humanresourcesonline-assets.b-cdn.net/images/hr-sg/lester_thai_airways_123rf_1600x900.jpg?auto_optimize=medium",
+        "flight_name": "Thai Airways",
+        "capacity": 210,
+        "price": {
+            "business_class": 2000,
+            "economic_class": 550
+        },
+        "description": "Thai Airways ensures a luxurious and comfortable journey for its passengers.",
+        "rating": 4.6,
+        "from": "Bangkok",
+        "to": "Sydney",
+        "departure_time": "2023-07-28 10:30",
+        "arrival_time": "2023-07-29 06:15"
+    }
+]
+

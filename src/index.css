@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.brandTitle{
+    font-family: 'Lobster', cursive;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+    @apply font-semibold text-blue-700 px-2 py-1 bg-transparent
+}
+
+.default{
+    @apply font-medium text-neutral px-2 py-1 bg-transparent
+}
+
+.myBtn{
+    @apply border border-primary px-3 py-1 font-semibold text-primary hover:bg-primary hover:text-white rounded-lg
+}
+
