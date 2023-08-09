@@ -109,8 +109,8 @@ console.log(loggedUser);
                     <label className='text-neutral text-lg mt-2 mb-1'>User Name:</label>
                     <input type="text" placeholder="Enter Name" name="userName" className='py-2 px-4 w-full lg:w-96 rounded-md placeholder:text-xs placeholder:tracking-wide bg-accent bg-opacity-10 focus:bg-opacity-30 outline-none' required />
 
-                    <label className='text-neutral text-lg mt-2 mb-1'>Photo Url:</label>
-                    <input type="url" placeholder="Enter Photo Url" name='photoUrl' className='py-2 px-4 w-full lg:w-96 rounded-md placeholder:text-xs placeholder:tracking-wide bg-accent bg-opacity-10 focus:bg-opacity-30 outline-none' />
+                    <label className='text-neutral text-lg mt-2 mb-1'>Photo</label>
+                    <input type="file" placeholder="Enter Photo Url" name='photoUrl' className='py-2 px-4 w-full lg:w-96 rounded-md placeholder:text-xs placeholder:tracking-wide bg-accent bg-opacity-10 focus:bg-opacity-30 outline-none' />
 
                     <label className='text-neutral text-lg mt-2 mb-1'>Email:</label>
                     <input type="email" placeholder="Enter email" name='email' className='py-2 px-4 w-full lg:w-96 rounded-md placeholder:text-xs placeholder:tracking-wide bg-accent bg-opacity-10 focus:bg-opacity-30 outline-none' required />
