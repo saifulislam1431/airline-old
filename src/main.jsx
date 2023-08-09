@@ -26,6 +26,7 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query'
 import BookPage from './Component/BookPage/BookPage.jsx';
+import AddNew from './Component/Admin/addNew.jsx';
 const queryClient = new QueryClient()
 
 const router = createBrowserRouter([
@@ -82,6 +83,10 @@ const router = createBrowserRouter([
           {
             path:"userDash",
             element:<PrivateRouter><ManageDash /></PrivateRouter>
+          },
+          {
+            path:"addNew",
+            element:<AddNew />
           }
         ]
       }

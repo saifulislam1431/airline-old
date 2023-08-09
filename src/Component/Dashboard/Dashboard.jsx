@@ -37,6 +37,9 @@ const Dashboard = () => {
     <li>
       <NavLink to="/dashboard/manageFlights" className={({isActive}) => (isActive ? "nav-side-active" : "nav-side")}>Manage Flights</NavLink>
     </li>
+    <li>
+      <NavLink to="/dashboard/addNew" className={({isActive}) => (isActive ? "nav-side-active" : "nav-side")}>Add New</NavLink>
+    </li>
       </> : 
     <li>
     <NavLink to="/dashboard/userDash" className={({isActive}) => (isActive ? "nav-side-active" : "nav-side")}>Manage Bookings</NavLink>
