@@ -1,7 +1,9 @@
+import axios from 'axios';
 import React from 'react';
+import Swal from 'sweetalert2';
 
 const AddNew = () => {
-    const handleAdd =(e)=>{
+    const handleAdd = async(e)=>{
         e.preventDefault();
         const form = e.target;
         const flight_name = form.name.value;
@@ -30,6 +32,16 @@ const AddNew = () => {
             description
         }
         console.log(newFlight);
+
+        const res = await axios.post("http://localhost:5000/add-flights",newFlight)
+        if(res.data.insertedId){
+            Swal.fire({
+                title: 'Success!',
+                text: 'Added Successfully!',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+              })
+        }
 
     }
     return (

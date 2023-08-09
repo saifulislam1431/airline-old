@@ -4,6 +4,7 @@ import { FaEye, FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa";
 import { toast } from 'react-toastify';
 import logo from "../../assets/airplane.png";
 import { userContext } from '../../Auth/Auth';
+import Swal from 'sweetalert2';
 
 const Login = () => {
     const { signIn, googleIn, resetPass } = useContext(userContext);
@@ -35,30 +36,22 @@ const Login = () => {
                 .then(res => {
                     const loggedUser = res.user;
                     navigate(from, { replace: true });
-                    toast('LogIn Successful', {
-                        position: "top-center",
-                        autoClose: 5000,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true,
-                        progress: undefined,
-                        theme: "light",
-                        });
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Login Successful',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                      })
                     form.reset();
 
                 })
                 .catch((error) => {
-                    toast.error(error.message, {
-                        position: "top-center",
-                        autoClose: 5000,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true,
-                        progress: undefined,
-                        theme: "dark",
-                    });
+                    Swal.fire({
+                        title: 'Error!',
+                        text: error.message,
+                        icon: 'error',
+                        confirmButtonText: 'Ok'
+                      })
                 })
         }
 

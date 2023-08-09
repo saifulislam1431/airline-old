@@ -3,21 +3,18 @@ import { Link, NavLink } from 'react-router-dom';
 import logo from "../../assets/airplane.png";
 import { userContext } from '../../Auth/Auth';
 import { toast } from 'react-toastify';
+import Swal from 'sweetalert2';
 const Navbar = () => {
     const { user,logOUt } = useContext(userContext);
     const handleOut = () =>{
         logOUt()
         .then(()=>{
-            toast('Log Out Successful', {
-                position: "top-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "light",
-                });
+            Swal.fire({
+                title: 'Success!',
+                text: 'Logout Successful',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+              })
         })
     }
     const navItems = <>

@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import { updateProfile } from 'firebase/auth';
 import logo from "../../assets/airplane.png";
 import { userContext } from '../../Auth/Auth';
+import Swal from 'sweetalert2';
 
 
 const Register = () => {
@@ -67,16 +68,12 @@ const newUser = {
                     .then(res=>res.json())
                     .then(data=>{
                         if(data.insertedId){
-                            toast('Registration Successful', {
-                                position: "top-center",
-                                autoClose: 5000,
-                                hideProgressBar: false,
-                                closeOnClick: true,
-                                pauseOnHover: true,
-                                draggable: true,
-                                progress: undefined,
-                                theme: "light",
-                                });
+                            Swal.fire({
+                                title: 'Success!',
+                                text: 'Register Successful',
+                                icon: 'success',
+                                confirmButtonText: 'Cool'
+                              })
                         }
                     })
                 })
@@ -84,16 +81,12 @@ const newUser = {
 console.log(loggedUser);
         })
         .catch((error)=>{
-            toast(error.message, {
-                position: "top-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "dark",
-                });
+            Swal.fire({
+                title: 'Error!',
+                text: error.message,
+                icon: 'error',
+                confirmButtonText: 'Ok'
+              })
         })
     }
     return (
