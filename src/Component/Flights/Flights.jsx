@@ -2,14 +2,15 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Flight from './Flight';
+import useFlights from '../../hooks/useFlights';
 
 const Flights = () => {
-    const [flights , setFlights] = useState([]);
-    useEffect(()=>{
-        fetch("http://localhost:5000/all-flights")
-        .then(res=>res.json())
-        .then(data=>setFlights(data))
-    },[])
+    const [flights] = useFlights();
+    // useEffect(()=>{
+    //     fetch("http://localhost:5000/all-flights")
+    //     .then(res=>res.json())
+    //     .then(data=>setFlights(data))
+    // },[])
     return (
         <section className='flex items-center justify-center my-14'>
 <div>

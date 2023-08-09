@@ -4,8 +4,9 @@ import { Rating } from '@smastrom/react-rating'
 import '@smastrom/react-rating/style.css'
 import { HiMiniArrowLongRight, HiUserGroup } from "react-icons/hi2";
 import { BiSolidPlaneLand, BiSolidPlaneTakeOff } from "react-icons/bi";
+import { Link } from 'react-router-dom';
 const Flight = ({flight}) => {
-    const {image,flight_name,capacity,rating,from,to,departure_time,arrival_time,price} = flight
+    const {_id,image,flight_name,capacity,rating,from,to,departure_time,arrival_time,price} = flight
     return (
         <div className="card card-side bg-base-100 shadow-xl">
   <figure><img src={image} alt="Movie" className='lg:h-72 lg:w-72'/></figure>
@@ -37,9 +38,9 @@ const Flight = ({flight}) => {
  <p className='inline-flex items-center gap-1 font-medium'><BiSolidPlaneLand className="w-6 h-6 text-primary"/> {arrival_time}</p>   
 </div>
     </div>
-    <div className="card-actions justify-end">
+    <Link to={`/booking/${_id}`} className="card-actions justify-end">
       <button className="myBtn">Book A Ticket</button>
-    </div>
+    </Link>
   </div>
 </div>
     );
