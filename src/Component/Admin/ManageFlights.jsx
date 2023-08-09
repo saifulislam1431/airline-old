@@ -37,7 +37,7 @@ const ManageFlights = () => {
         
     }
     return (
-        <div className="overflow-x-auto ml-36">
+        <div className="overflow-x-auto ml-36 my-20">
   <table className="table">
     {/* head */}
     <thead>
