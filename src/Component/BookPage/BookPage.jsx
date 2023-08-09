@@ -2,6 +2,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import useFlights from '../../hooks/useFlights';
 import { userContext } from '../../Auth/Auth';
+import axios from 'axios';
+import Swal from 'sweetalert2';
 
 const BookPage = () => {
 
@@ -30,6 +32,42 @@ if(category === "Business"){
       };
 
 
+      const handleBook = async(e)=>{
+        e.preventDefault()
+
+        const flightName = selectedFlight.flight_name;
+        const passenger = user.displayName;
+        const email = user.email;
+        const from = selectedFlight.from;
+        const to = selectedFlight.to;
+        const date = selectedFlight.departure_time;
+        const total = e.target.totalPrice.value;
+        
+        const newDetails = {
+            flightName,
+            passenger,
+            email,
+            from,
+            to,
+            date,
+            category,
+            quantity,
+            total,
+            status: "pending"
+        }
+
+        const res = await axios.post("http://localhost:5000/bookings",newDetails)
+        if(res.data.insertedId){
+            Swal.fire({
+  title: 'Success!',
+  text: 'Booking Confirm!',
+  icon: 'success',
+  confirmButtonText: 'Cool'
+})
+        }
+      }
+
+
     return (
         <div className="hero min-h-screen bg-base-200">
             <div className='absolute top-36'>
@@ -38,7 +76,7 @@ if(category === "Business"){
         <div className="hero-content flex-col lg:flex-row gap-14">
           <img src={selectedFlight.image} className="max-w-sm rounded-lg shadow-2xl" />
           <div className="card flex-shrink-0 w-full max-w-xl shadow-2xl bg-base-100">
-      <div className="card-body">
+      <form onSubmit={handleBook} className="card-body">
         <div className="form-control flex flex-row gap-10">
         <div>
           <label className="label">
@@ -78,12 +116,12 @@ if(category === "Business"){
         </div>
 
         <div className="form-control flex flex-row gap-10">
-        <div>
+        <div className='w-full'>
           <label className="label">
             <span className="label-text">Select your category</span>
           </label>
           <div className="dropdown">
-  <label tabIndex={0} className="btn m-1 bg-base-200 text-black hover:bg-base-200">Category Of Tickets</label>
+  <label tabIndex={0} className="btn m-1 bg-base-200 text-black hover:bg-base-200 w-full">Category Of Tickets</label>
   <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box w-52">
     <li onClick={()=>setCategory("Business")} className='p-3 hover:bg-primary hover:text-white'>Business</li>
     <li onClick={()=>setCategory("Economic")} className='p-3 hover:bg-primary hover:text-white'>Economic</li>
@@ -128,9 +166,9 @@ if(category === "Business"){
         </div>
         
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Confirm Booking</button>
+            <input className="btn btn-primary" type="submit" value="Confirm Booking" />
         </div>
-      </div>
+      </form>
     </div>
   </div>
       </div>   
