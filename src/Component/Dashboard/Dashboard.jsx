@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import logo from "../../assets/airplane.png";
+import useAdmin from '../../hooks/useAdmin';
 
 const Dashboard = () => {
-  const admin = false;
+  const [isAdmin] = useAdmin();
     return (
 <div className="drawer lg:drawer-open z-0">
   <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -26,7 +27,7 @@ const Dashboard = () => {
 <div className="divider"></div>
 
     {
-      admin ? <>
+      isAdmin ? <>
       <li>
       <NavLink to="/dashboard/manageBook" className={({isActive}) => (isActive ? "nav-side-active" : "nav-side")}>Manage Bookings</NavLink>
     </li>

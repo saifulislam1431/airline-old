@@ -4,9 +4,10 @@ import useFlights from '../../hooks/useFlights';
 import { userContext } from '../../Auth/Auth';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import useBookings from '../../hooks/useBookings';
 
 const BookPage = () => {
-
+const [ , , refetch] = useBookings();
     const{user} = useContext(userContext);
     const {id} = useParams();
     const [flights] = useFlights();
@@ -58,6 +59,7 @@ if(category === "Business"){
 
         const res = await axios.post("http://localhost:5000/bookings",newDetails)
         if(res.data.insertedId){
+            refetch();
             Swal.fire({
   title: 'Success!',
   text: 'Booking Confirm!',

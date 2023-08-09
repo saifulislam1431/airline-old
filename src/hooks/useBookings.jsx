@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { userContext } from '../Auth/Auth';
 
 const useBookings = () => {
