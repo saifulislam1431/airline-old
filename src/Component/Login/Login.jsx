@@ -60,16 +60,12 @@ const Login = () => {
                 .then(res => {
                     const loggedUser = res.user;
                     navigate(from, { replace: true });
-                    toast.success('Login Successful!', {
-                        position: "top-center",
-                        autoClose: 5000,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true,
-                        progress: undefined,
-                        theme: "dark",
-                    });
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Login Successful',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                      })
 
                 })
                 .catch((error) => {
